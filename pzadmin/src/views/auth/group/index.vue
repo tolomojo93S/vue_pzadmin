@@ -1,5 +1,9 @@
 <template>
   <button @click="dialogFormVisable = true">打开</button>
+  <el-table-column prop="id" label="id"/>
+  <el-table-column prop="name" label="昵称"/>
+  <el-table-column prop="permissionName" label="菜单权限"/>
+  
   <el-dialog
   v-model="dialogFormVisable"
   :before-close="beforeClose"
